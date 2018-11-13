@@ -1,0 +1,40 @@
+<ul>
+  <li><a href="/">xyz</a></li>
+  <li><a href="/">hack</a></li>
+  <li><a href="/">cheat</a></li>
+  <li><a href="/">se</a></li>
+  <li style="float:right"><a class="active" href="/profile">nomoon</a></li>
+  <li class="logo"> <%= image_tag("logo.jpg", class:"logojpg")%></li>
+</ul>
+<h1>Mon Super Site</h1>
+
+<button class="tablink" onclick="openPage('Home', this, 'black')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'black')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+
+<div id="Home" class="tabcontent">
+  <div class="card">
+   <%= image_tag("redteletubie.jpeg", class:"card-image")%>
+   <div class="card-category">
+     <h4><b>John Doe</b></h4>
+     <p>Architect & Engineer</p>
+     <a href class="button" href="#index" type="button">Voir Profil</a>
+   </div>
+ </div>
+</div>
+<div id="News" class="tabcontent">
+ <h3>News</h3>
+ <p>Quel belle journée flemme de refaire une card mdrrrrr</p>
+ <a href class="button" type="button">Voir News</a>
+</div>
+<div id="Contact" class="tabcontent">
+ <h3>Contact</h3>
+ <p>Get in touch, or swing by for a cup of coffee.</p>
+ <a href class="button" type="button">Nous Contacter</a>
+</div>
+<div id="About" class="tabcontent">
+ <h3>About</h3>
+ <p>Who we are and what we do.</p>
+ <a href class="button" type="button">balblalba</a>
+</div>
